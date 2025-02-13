@@ -1,0 +1,187 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "How are you?", "Is anyone there?", "Good day","mabuhay","good morning","good afternoon","good day","ohio","konnichiwa","good evening"],
+            "responses": ["Hello!", "Hi there!", "How can I help you?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye","sayonara","ciao","talk to you soon","talk to you later"],
+            "responses": ["Goodbye!", "See you later!", "Take care!"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful","you are great"],
+            "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+        },
+        {
+            "tag": "aggree",
+            "patterns": ["This is ok", "Affirmative", "confirmed","I am with you on this","got it","sure","yes","precisely","understood","aggreed","sounds perfect","I couldn't agree more!","I'm totally on board with that!"],
+            "responses": ["I have received your reply", "Happy to help!", "Thank you"]
+        },
+        {
+            "tag": "decline",
+            "patterns": ["This won't work", "no", "absolutely not","i dont aggree with this","This is not ok","i don't want this","maybe another time","not this time"],
+            "responses": ["How would you like to proceed?", "What do you want to change?", "What seems to be the problem?"]
+        },
+        {
+            "tag": "complain",
+            "patterns": ["This is taking too long", "I'm a little concerned about this", "this is not how it is done","you did not comply"],
+            "responses": ["I understand how frustrating this must be", "How to you want me to handle this?", "i'm sorry i could not be of help"]
+        },
+        {
+            "tag": "anger",
+            "patterns": ["What is wrong with you", "this is outragoues", "how could you","you are out of your league","this is not right","don't you dare","leave me alone","stop disturbing me"],
+            "responses": ["Im sorry this is not going well", "sorry if i have not met your expectations", "could this be resolved?"]
+        },
+        {
+            "tag": "compliment",
+            "patterns": ["You are fast", "You are perfect", "You have a nice handle on this","you are well versed"],
+            "responses": ["Thank you", "I'm glad to hear it", "Thank you for the compliment"]
+        },
+        {
+            "tag": "insult",
+            "patterns": ["you are ugly", "you know nothing", "useless","worthless","you are not helping","you lack knowledge","failure","stupid"],
+            "responses": ["I understand how frustrating this must be", "How to you want me to handle this?", "i'm sorry you feel that way"]
+        },
+        {
+            "tag": "help",
+            "patterns": ["I need help", "Can you help me?", "I have a question", "I'm having trouble with", "How do I", "What should I do?", "I'm lost", "I need assistance", "Can you guide me?", "I'm confused"],
+            "responses": ["I'd be happy to help! What do you need help with?", "Sure, I can help. What's the problem?", "I can definitely assist you. What's your question?", "Let's see what we can do. What's going on?", "I'm here to help. What's the issue?", "Tell me more about the problem.", "I'll do my best to help you.", "I'm happy to assist.", "Let's figure this out together.", "I'm here to guide you."]
+        },
+        {
+        "tag": "reset_password",
+        "patterns": ["How do I reset a user password?","Reset password for a user","Change user password","How to reset a password in Linux?","Password reset command"],
+        "responses": [
+            "To reset a user password, use the command: `passwd username`.","You can reset a password with: `sudo passwd username`."]
+    },
+    {
+        "tag": "check_disk_space",
+        "patterns": [
+            "How do I check disk space?",
+            "Check available disk space",
+            "Disk space command",
+            "How to see free disk space?",
+            "What's the command for disk usage?"
+        ],
+        "responses": [
+            "You can check disk space with: `df -h`.",
+            "Use `df -h` to see disk usage and free space."
+        ]
+    },
+    {
+        "tag": "restart_service",
+        "patterns": [
+            "How do I restart a service?",
+            "Restart a service in Linux",
+            "Service restart command",
+            "How to reboot a service?",
+            "Restart system service"
+        ],
+        "responses": [
+            "To restart a service, use: `sudo systemctl restart servicename`.",
+            "Restart a service with: `sudo service servicename restart`."
+        ]
+    },
+    {
+        "tag": "check_server_uptime",
+        "patterns": [
+            "How do I check server uptime?",
+            "Server uptime command",
+            "How long has the server been running?",
+            "Check system uptime",
+            "Uptime command in Linux"
+        ],
+        "responses": [
+            "Check server uptime with: `uptime`.",
+            "Use `uptime` to see how long the server has been running."
+        ]
+    },
+    {
+        "tag": "add_new_user",
+        "patterns": [
+            "How do I add a new user in Linux?",
+            "Create a new user",
+            "Add user command",
+            "How to create a user account?",
+            "Linux add user"
+        ],
+        "responses": [
+            "To add a new user in Linux, use: `sudo adduser username`.",
+            "Create a new user with: `sudo useradd username`."
+        ]
+    },
+    {
+        "tag": "check_system_logs",
+        "patterns": [
+            "How do I check system logs?",
+            "View system logs",
+            "System log command",
+            "How to see logs in Linux?",
+            "Check server logs"
+        ],
+        "responses": [
+            "You can check system logs with: `journalctl` or by viewing `/var/log/syslog`.",
+            "Use `tail -f /var/log/syslog` to monitor logs in real-time."
+        ]
+    },
+    {
+        "tag": "update_system",
+        "patterns": [
+            "How do I update the system?",
+            "Update Linux system",
+            "System update command",
+            "How to upgrade packages?",
+            "Update server software"
+        ],
+        "responses": [
+            "Update the system using: `sudo apt update && sudo apt upgrade` (for Debian-based systems).",
+            "For Red Hat-based systems, use: `sudo yum update`."
+        ]
+    },
+    {
+        "tag": "monitor_cpu_usage",
+        "patterns": [
+            "How do I monitor CPU usage?",
+            "Check CPU usage",
+            "CPU usage command",
+            "How to see CPU performance?",
+            "Monitor server CPU"
+        ],
+        "responses": [
+            "Monitor CPU usage with: `top` or `htop`.",
+            "Use `mpstat` to check CPU performance."
+        ]
+    },
+    {
+        "tag": "configure_firewall",
+        "patterns": [
+            "How do I configure a firewall?",
+            "Set up a firewall",
+            "Firewall configuration command",
+            "How to enable a firewall?",
+            "Configure UFW or iptables"
+        ],
+        "responses": [
+            "Configure a firewall using `ufw` or `iptables`.",
+            "For UFW, use: `sudo ufw enable` to enable the firewall."
+        ]
+    },
+    {
+        "tag": "troubleshoot_network",
+        "patterns": [
+            "How do I troubleshoot network issues?",
+            "Fix network problems",
+            "Network troubleshooting commands",
+            "How to check network connectivity?",
+            "Diagnose network issues"
+        ],
+        "responses": [
+            "For network troubleshooting, start with: `ping`, `traceroute`, or `netstat`.",
+            "Use `ifconfig` or `ip addr` to check network interfaces."
+        ]
+    }
+
+    ]
+}
